@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class PasswordsAndUnitTest {
+
+	static ArrayList<String> passwords = new ArrayList<>();
+	
+	public static void main(String[] args) {
+		
+		Scanner scnr = new Scanner(System.in);
+		
+		System.out.print("Hello! Please enter a password: ");
+		
+		String password = scnr.next();
+		
+		if(addPassword(password)) {
+			passwords.add(password);
+		} else {
+			System.out.println("That's not a valid password.");
+		}
+	
+
+	}
+	
+	public static boolean addPassword(String password) {
+		
+		boolean validPassword = true;
+		
+		for (int i = 0; i < passwords.size(); i++) {
+			if(passwords.get(i) == password) {
+				validPassword = false;
+			}
+		}
+		
+		return validPassword;
+	}
+	
+	
+
+}

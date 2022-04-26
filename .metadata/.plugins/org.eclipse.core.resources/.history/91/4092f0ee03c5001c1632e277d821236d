@@ -1,0 +1,22 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayList;
+
+import org.junit.jupiter.api.Test;
+
+class PasswordsUnitTests {
+
+	@Test
+	void doesArrayListContainPassword() {
+		
+		ArrayList<String> passwords = new ArrayList<>();
+		
+		passwords.add("googleGuy99");
+		
+		assertEquals(false, PasswordsAndUnitTest.addPassword("googleGuy99"));
+
+
+		
+	}
+
+}
