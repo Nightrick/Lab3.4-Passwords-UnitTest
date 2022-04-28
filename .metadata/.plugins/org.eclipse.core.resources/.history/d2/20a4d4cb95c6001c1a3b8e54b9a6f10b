@@ -7,9 +7,9 @@ public class PasswordsAndUnitTest {
 	
 	public static void main(String[] args) {
 		
-	    Scanner scnr = new Scanner(System.in);
+		Scanner scnr = new Scanner(System.in);
 		String password = "";
-		String continueAdds = "y";
+		String continueAdds = "";
 		
 		do {
 		System.out.print("Hello! Please enter a password: ");
@@ -21,16 +21,11 @@ public class PasswordsAndUnitTest {
 			passwords.add(password);
 			System.out.print("Would you like to add another password? (y/n): ");
 			continueAdds = scnr.next().toLowerCase();
-			} else {
-				System.out.println("That's not a valid password.");
 			}
-			
 		} else {
 			System.out.println("That's not a valid password.");
 		}
 		}while(continueAdds.equals("y"));
-		
-		System.out.println("Thank you. Have a nice day!"); 
 
 	}
 	
@@ -76,7 +71,11 @@ public class PasswordsAndUnitTest {
 			validPassword = false;
 		}
 
+		
 		return validPassword;
+		
+		
+		
 	}
 	
 	public static boolean vowelChecker(char c) {

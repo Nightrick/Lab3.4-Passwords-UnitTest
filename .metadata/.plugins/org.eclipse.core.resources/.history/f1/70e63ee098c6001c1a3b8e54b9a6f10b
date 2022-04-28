@@ -7,7 +7,7 @@ public class PasswordsAndUnitTest {
 	
 	public static void main(String[] args) {
 		
-	    Scanner scnr = new Scanner(System.in);
+	/*	Scanner scnr = new Scanner(System.in);
 		String password = "";
 		String continueAdds = "y";
 		
@@ -31,7 +31,7 @@ public class PasswordsAndUnitTest {
 		}while(continueAdds.equals("y"));
 		
 		System.out.println("Thank you. Have a nice day!"); 
-
+*/
 	}
 	
 	public static boolean addPassword(String password) {
@@ -76,6 +76,15 @@ public class PasswordsAndUnitTest {
 			validPassword = false;
 		}
 
+		if(validPassword) {
+			if(!(passwords.contains(password))) {
+			passwords.add(password);
+			return validPassword;
+			} else {
+			return false;
+			}
+		}
+		
 		return validPassword;
 	}
 	

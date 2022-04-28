@@ -22,9 +22,9 @@ class PasswordsUnitTests {
 					PasswordsAndUnitTest.passwords.add("gOOgleGuy99");
 			}
 			}
-		if (PasswordsAndUnitTest.addPassword("gOOgleGuy99")) {
-				if(!(PasswordsAndUnitTest.passwords.contains("gOOgleGuy99"))) {
-					PasswordsAndUnitTest.passwords.add("gOOgleGuy99");
+		if (PasswordsAndUnitTest.addPassword("IthinkthIs9")) {
+				if(!(PasswordsAndUnitTest.passwords.contains("IthinkthIs9"))) {
+					PasswordsAndUnitTest.passwords.add("IthinkthIs9");
 			}		
 		}
 		ArrayList<String> actual = PasswordsAndUnitTest.passwords;
@@ -93,7 +93,7 @@ class PasswordsUnitTests {
 		@Test
 		void doesPasswordHaveSpaces1() {
 			
-			assertEquals(true, PasswordsAndUnitTest.addPassword("gOOglGuy99"));
+			assertEquals(true, PasswordsAndUnitTest.addPassword("gOOgleGuy99"));
 		
 	}
 		

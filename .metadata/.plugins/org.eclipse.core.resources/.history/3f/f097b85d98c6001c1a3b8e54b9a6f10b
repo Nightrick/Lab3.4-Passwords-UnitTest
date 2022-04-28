@@ -7,7 +7,7 @@ public class PasswordsAndUnitTest {
 	
 	public static void main(String[] args) {
 		
-	    Scanner scnr = new Scanner(System.in);
+		Scanner scnr = new Scanner(System.in);
 		String password = "";
 		String continueAdds = "y";
 		
@@ -76,7 +76,11 @@ public class PasswordsAndUnitTest {
 			validPassword = false;
 		}
 
+		
 		return validPassword;
+		
+		
+		
 	}
 	
 	public static boolean vowelChecker(char c) {

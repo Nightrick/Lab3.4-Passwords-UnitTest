@@ -76,6 +76,16 @@ public class PasswordsAndUnitTest {
 			validPassword = false;
 		}
 
+		/*
+		if(validPassword) {
+			if(!(passwords.contains(password))) {
+			passwords.add(password);
+			return validPassword;
+			} else {
+			return false;
+			}
+		}
+		*/
 		return validPassword;
 	}
 	

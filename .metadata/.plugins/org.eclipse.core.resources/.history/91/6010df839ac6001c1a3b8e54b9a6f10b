@@ -93,7 +93,7 @@ class PasswordsUnitTests {
 		@Test
 		void doesPasswordHaveSpaces1() {
 			
-			assertEquals(true, PasswordsAndUnitTest.addPassword("gOOglGuy99"));
+			assertEquals(true, PasswordsAndUnitTest.addPassword("gOOgleGuy99"));
 		
 	}
 		

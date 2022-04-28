@@ -1,7 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
 
@@ -10,27 +9,11 @@ class PasswordsUnitTests {
 	@Test
 	void doesArrayListContainPassword() {
 		
-		ArrayList<String> expected = new ArrayList<String> (Arrays.asList("mod", "gOOgleGuy99", "IthinkthIs9"));
+		ArrayList<String> passwords = new ArrayList<>();
 		
-		if (PasswordsAndUnitTest.addPassword("mod")) {
-			if(!(PasswordsAndUnitTest.passwords.contains("mod"))) {
-				PasswordsAndUnitTest.passwords.add("mod");
-		}
-		}
-			if (PasswordsAndUnitTest.addPassword("gOOgleGuy99")) {
-				if(!(PasswordsAndUnitTest.passwords.contains("gOOgleGuy99"))) {
-					PasswordsAndUnitTest.passwords.add("gOOgleGuy99");
-			}
-			}
-		if (PasswordsAndUnitTest.addPassword("gOOgleGuy99")) {
-				if(!(PasswordsAndUnitTest.passwords.contains("gOOgleGuy99"))) {
-					PasswordsAndUnitTest.passwords.add("gOOgleGuy99");
-			}		
-		}
-		ArrayList<String> actual = PasswordsAndUnitTest.passwords;
+		passwords.add("googleGuy99");
 		
-		
-		assertEquals(expected, actual);
+		assertEquals(false, PasswordsAndUnitTest.addPassword("gOOgleGuy99"));
 	}
 		
 	    //Method returns true or false correctly 
@@ -52,27 +35,9 @@ class PasswordsUnitTests {
 		@Test
 		void isPasswordLongEnough3() {
 			
-			ArrayList<String> expected = new ArrayList<String> (Arrays.asList("mod", "gOOgleGuy99", "IthinkthIs9"));
-			
-			if (PasswordsAndUnitTest.addPassword("mod")) {
-				if(!(PasswordsAndUnitTest.passwords.contains("mod"))) {
-					PasswordsAndUnitTest.passwords.add("mod");
-			}
-			}
-				if (PasswordsAndUnitTest.addPassword("gOOgleGuy99")) {
-					if(!(PasswordsAndUnitTest.passwords.contains("gOOgleGuy99"))) {
-						PasswordsAndUnitTest.passwords.add("gOOgleGuy99");
-				}
-				}
-			if (PasswordsAndUnitTest.addPassword("IthinkthIs9")) {
-					if(!(PasswordsAndUnitTest.passwords.contains("IthinkthIs9"))) {
-						PasswordsAndUnitTest.passwords.add("IthinkthIs9");
-				}		
-			}
-			ArrayList<String> actual = PasswordsAndUnitTest.passwords;
 			
 			
-			assertEquals(expected, actual);
+			assertEquals(false, PasswordsAndUnitTest.addPassword("gOOgleyDoogelyGuy99"));
 		
 	}
 		
@@ -93,7 +58,7 @@ class PasswordsUnitTests {
 		@Test
 		void doesPasswordHaveSpaces1() {
 			
-			assertEquals(true, PasswordsAndUnitTest.addPassword("gOOglGuy99"));
+			assertEquals(true, PasswordsAndUnitTest.addPassword("gOOgleGuy99"));
 		
 	}
 		
