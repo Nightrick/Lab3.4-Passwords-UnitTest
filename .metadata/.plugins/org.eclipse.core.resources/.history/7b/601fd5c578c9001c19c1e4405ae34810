@@ -174,34 +174,6 @@ class PasswordsUnitTests {
 		
 	}
 		
-		//ArrayList changed
-		@Test
-		void doesPasswordHaveEnoughCapitalVowels3() {
-			
-			ArrayList<String> expected = new ArrayList<String> (Arrays.asList("mod", "IthinkthIs9"));
-			
-			if (PasswordsAndUnitTest.addPassword("mod")) {
-				if(!(PasswordsAndUnitTest.passwords.contains("mod"))) {
-					PasswordsAndUnitTest.passwords.add("mod");
-			}
-			}
-				if (PasswordsAndUnitTest.addPassword("googleGuy99")) {
-					if(!(PasswordsAndUnitTest.passwords.contains("googleGuy99"))) {
-						PasswordsAndUnitTest.passwords.add("googleGuy99");
-				}
-				}
-			if (PasswordsAndUnitTest.addPassword("IthinkthIs9")) {
-					if(!(PasswordsAndUnitTest.passwords.contains("IthinkthIs9"))) {
-						PasswordsAndUnitTest.passwords.add("IthinkthIs9");
-				}		
-			}
-			ArrayList<String> actual = PasswordsAndUnitTest.passwords;
-			
-			
-			assertEquals(expected, actual);
-		
-	}
-		
 		@Test
 		void isPasswordModorAdmin1() {
 			
@@ -220,34 +192,6 @@ class PasswordsUnitTests {
 		void isPasswordModorAdmin3() {
 			
 			assertEquals(false, PasswordsAndUnitTest.addPassword("Admin"));
-		
-	}
-		
-		//ArrayList changed
-		@Test
-		void isPasswordModorAdmin4() {
-			
-			ArrayList<String> expected = new ArrayList<String> (Arrays.asList("mod", "IthinkthIs9"));
-			
-			if (PasswordsAndUnitTest.addPassword("mod")) {
-				if(!(PasswordsAndUnitTest.passwords.contains("mod"))) {
-					PasswordsAndUnitTest.passwords.add("mod");
-			}
-			}
-				if (PasswordsAndUnitTest.addPassword("gOOgle Guy99")) {
-					if(!(PasswordsAndUnitTest.passwords.contains("gOOgle Guy99"))) {
-						PasswordsAndUnitTest.passwords.add("gOOgle Guy99");
-				}
-				}
-			if (PasswordsAndUnitTest.addPassword("IthinkthIs9")) {
-					if(!(PasswordsAndUnitTest.passwords.contains("IthinkthIs9"))) {
-						PasswordsAndUnitTest.passwords.add("IthinkthIs9");
-				}		
-			}
-			ArrayList<String> actual = PasswordsAndUnitTest.passwords;
-			
-			
-			assertEquals(expected, actual);
 		
 	}
 		

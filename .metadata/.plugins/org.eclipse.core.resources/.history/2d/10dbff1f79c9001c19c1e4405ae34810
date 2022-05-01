@@ -227,21 +227,26 @@ class PasswordsUnitTests {
 		@Test
 		void isPasswordModorAdmin4() {
 			
-			ArrayList<String> expected = new ArrayList<String> (Arrays.asList("mod", "IthinkthIs9"));
+			ArrayList<String> expected = new ArrayList<String> (Arrays.asList("mod", "IthinkthIs9", "admin"));
 			
 			if (PasswordsAndUnitTest.addPassword("mod")) {
 				if(!(PasswordsAndUnitTest.passwords.contains("mod"))) {
 					PasswordsAndUnitTest.passwords.add("mod");
 			}
 			}
-				if (PasswordsAndUnitTest.addPassword("gOOgle Guy99")) {
-					if(!(PasswordsAndUnitTest.passwords.contains("gOOgle Guy99"))) {
-						PasswordsAndUnitTest.passwords.add("gOOgle Guy99");
-				}
-				}
 			if (PasswordsAndUnitTest.addPassword("IthinkthIs9")) {
-					if(!(PasswordsAndUnitTest.passwords.contains("IthinkthIs9"))) {
-						PasswordsAndUnitTest.passwords.add("IthinkthIs9");
+				if(!(PasswordsAndUnitTest.passwords.contains("IthinkthIs9"))) {
+					PasswordsAndUnitTest.passwords.add("IthinkthIs9");
+			}		
+			}
+				if (PasswordsAndUnitTest.addPassword("admin")) {
+					if(!(PasswordsAndUnitTest.passwords.contains("admin"))) {
+						PasswordsAndUnitTest.passwords.add("admin");
+				}
+				}
+			if (PasswordsAndUnitTest.addPassword("mod")) {
+					if(!(PasswordsAndUnitTest.passwords.contains("mod"))) {
+						PasswordsAndUnitTest.passwords.add("mod");
 				}		
 			}
 			ArrayList<String> actual = PasswordsAndUnitTest.passwords;
